@@ -3,7 +3,15 @@
 import Link from "next/link";
 import { useState } from "react";
 import { Menu, XIcon } from "lucide-react";
-import { navHeader, navFooter, hrClass } from "@/components/constant";
+import {
+  navHeader,
+  navFooter,
+  hrClass,
+  h3Class,
+  phone1,
+  phone2,
+  email1,
+} from "@/components/constant";
 
 const pages = [
   { name: "Home", href: "/" },
@@ -61,9 +69,15 @@ export const NavigationFooter = () => {
 
       <div className={navFooter}>
         <div>
-          <Link href="/" className="uppercase">
-            Ascend Behavioral Health
-          </Link>
+          <h3 className={h3Class}>Address</h3>
+          <div>106 Wellington Place</div>
+          <div>Cincinnati, OH, 45219, US</div>
+          <br />
+          <div>{phone1} Call</div>
+          <div>{phone2} Call / Fax / Text</div>
+          <br />
+
+          <div className="uppercase">Ascend Behavioral Health</div>
           <div>&copy; {currentYear}. All rights reserved</div>
         </div>
 

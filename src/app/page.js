@@ -1,9 +1,8 @@
-// import Image from "next/image";
-// import { divClass, h2Class, pClass } from "@/components/constant";
-
 import { Welcome } from "@/components/content/welcome";
 import { OurClinic } from "@/components/content/our-clinic";
 import { Clinicians } from "@/components/content/clinicians";
+import { Services } from "@/components/content/services";
+import { ContactUs } from "@/components/content/contact-us";
 
 export default function Page() {
   return (
@@ -11,6 +10,8 @@ export default function Page() {
       <Welcome />
       <OurClinic />
       <Clinicians />
+      <Services />
+      <ContactUs />
     </>
   );
 }

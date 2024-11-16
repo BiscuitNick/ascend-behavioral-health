@@ -9,3 +9,8 @@ export const h2Class = "text-3xl bold";
 export const h3Class = "text-2xl";
 
 export const pClass = "text-lg my-2";
+export const listClass = "list-disc ml-4 my-2 text-lg";
+
+export const phone1 = "513-381.2751";
+export const phone2 = "513-428-2201";
+export const email1 = "ascendbehavioralhealthinc@gmail.com";
