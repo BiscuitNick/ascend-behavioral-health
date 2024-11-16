@@ -1,27 +1,32 @@
 import Image from "next/image";
-import { divClass, h2Class, pClass } from "@/components/constant";
+import { divClass, h2Class, pClass, listClass } from "@/components/constant";
 
 export const Services = () => {
   return (
     <div className={divClass}>
       <h2 className={h2Class}>Services</h2>
-      <Image src="/our-clinic.jpg" alt="our clinic" width={1280} height={851} />
+      <Image src="/services.jpg" alt="Services" width={1279} height={854} />
+      <ul className={listClass}>
+        <li>Psychiatric Evaluation</li>
+        <li>
+          One Hour Medication Management and Psychodynamic/Supportive
+          Psychotherapy
+        </li>
+        <li>Half Hour Medication Management and Supportive Psychotherapy</li>
+        <li>Psychopharmacology and Medication Management</li>
+      </ul>
+
+      <br />
+
+      <h2 className={h2Class}>Fees and Insurance</h2>
       <p className={pClass}>
-        Ascend Behavioral Health is a new outpatient clinic in Cincinnati for
-        the treatment of mental and behavioral health conditions. We strive to
-        provide the best quality of care to each and every patient. We strive to
-        do so in the context of a quaint, historic building so that any patient
-        who comes to us can be assured of comfortable and beautiful surroundings
-        in the hope that he or she feels best able to open up and share their
-        needs and goals. We strive to work as a team with each patient so that
-        the patient is fully informed, involved and empowered. We strive to have
-        each and every patient feel like a valued person and not just another
-        number.
-      </p>
-      <p className={pClass}>
-        Please allow us the opportunity to work with you. Call today to schedule
-        an appointment so you might start on your own individualized journey
-        toward health and wellness.
+        At this time, we do not accept insurance at ABH. This allows for more
+        discretion and privacy as your personal information is not mandated to
+        be reported to any insurance company. This policy also allows for
+        treatment to proceed in the way that you and your treater deem necessary
+        without imposed restrictions and requirements by an insurance company.
+        In the future, we intend to take insurance for those patients who prefer
+        this method of payment.
       </p>
     </div>
   );
