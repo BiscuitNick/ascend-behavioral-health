@@ -76,12 +76,16 @@ export const NavigationFooter = () => {
           <div>{phone1} Call</div>
           <div>{phone2} Call / Fax / Text</div>
           <br />
+          <div>
+            <a href={`mainto:${email1}`}>{email1}</a>
+          </div>
+          <br />
 
           <div className="uppercase">Ascend Behavioral Health</div>
           <div>&copy; {currentYear}. All rights reserved</div>
         </div>
 
-        <div className="grid grid-flow-row gap-4">
+        <div className="grid grid-flow-row m-auto mt-0 mr-0 p-2 gap-4">
           {pages.map((page, i) => (
             <Link key={i} href={page.href}>
               {page.name}
